@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
-	   <link href="website.css" rel="stylesheet">
-	     
-	   
-	   <title>Weloveanime</title>
-    </head>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+	<link href="website.css" rel="stylesheet">
 
-    <body>
-       <div id="header">
-    	 <h1>
-    		Anime World
-	     </h1>
-	    </div>
-    </body>
+<title>Weloveanime</title>
+</head>
+<body>
+	<div id="header">
+  <h1>Anime World</h1>
+	<ul class= "topnav" id="myTopnav">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about_anime">About Anime</a></li>
+		<li><a href="#genre">Genre</a></li>
+		<li><a href="newest">Newest</a></li>
+		<li><a href="most_popular">Most Popular</a></li>
+		<li><a href="contact">Contact</a></li>
+			<a href="javascript:void(0);"
+			onclick="myFunction()">&#9776;</a>
+		</li>
+	</div>
+<script> function myFunction() {
+	var x=
+	document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += "responsive";
+	} else {
+		x.className="topnav"
+	}
+}
+</script>
+	</body>
 
 </html>
