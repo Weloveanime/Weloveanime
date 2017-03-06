@@ -63,6 +63,6 @@ ul.topnav li.icon {
 		text-align: left;
 	}
 }
-
-
-
+.right.carousel-control, .left.carousel-control {
+	display: none;
+}
