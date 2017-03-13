@@ -68,6 +68,7 @@ ul.topnav li.icon {
 	display: none;
 }
 #myCarousel {
+	background-color: black;
 }
 
 .card-container {
