@@ -64,6 +64,12 @@ ul.topnav li.icon {
 	}
 }
 
+.right.carousel-control, .left.carousel-control {
+	display: none;
+}
+#myCarousel {
+}
+
 .card-container {
 	perspective: 1000px;
 	z-index: 1;
@@ -145,4 +151,6 @@ ul.topnav li.icon {
 	color: black;
 	text-decoration: none;
 }
+
+
 
