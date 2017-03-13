@@ -64,5 +64,85 @@ ul.topnav li.icon {
 	}
 }
 
+.card-container {
+	perspective: 1000px;
+	z-index: 1;
+	width: 250px;
+	height: 500px;
+}
 
+/* flip the pane when hovered */
+.card-container:hover .card-flip, .card-container.hover .card-flip {
+	transform: rotateY(180deg);
+}
+
+/* speed */
+.card-flip {
+	height: 374px;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	/* transform-origin: 67% 0; */
+	position: relative;
+}
+
+.card-flip .flipped {
+	transform: translateX(-100%) rotateY(-180deg);
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	width: 250px;
+	height: 100%;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	transform: rotateY(0deg);
+}
+
+.front img {
+	width: 100%;
+	height: auto;
+}
+
+/*back, initially hidden */
+.back {
+	transform: rotateY(180deg);
+    background-color: #e0e0eb;
+    overflow: auto;
+    position: relative;
+}
+
+.back p {
+	font-size: 18px;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	color: grey;
+	font-weight: lighter;
+	width: 100%;
+}
+
+.back .back-bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 0.2px solid grey;
+}
+
+.card-details {
+	background-color: #e0e0eb;
+	padding-top: 10px;
+	padding-left: 10px;
+	border-top: 1px solid grey;
+
+}
+
+.card-details a {
+	color: black;
+	text-decoration: none;
+}
 

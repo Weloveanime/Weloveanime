@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+	
 	<link href="website.css" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="snorlax_icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="snorlax_icon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="snorlax_icon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="snorlax_icon/manifest.json">
+	<link rel="mask-icon" href="snorlax_icon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
 
 <title>Weloveanime</title>
 </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write('<script src="jquery-3.1.1.min.js"></script>
+  <script> /*
+  	if (jQuery) {
+    alert("jquery is loaded");
+    } 
+    else {
+    alert("Not loaded");
+    } */
+  </script>
 <body>
 	<div id="header">
   <h1>Anime World</h1>
@@ -20,6 +39,48 @@
 			onclick="myFunction()">&#9776;</a>
 		</li>
 	</div>
+    
+    <div class="popular-shows">
+    	<h2>Popular Shows</h2>
+		<div class="card-container" ontouchstart="this.classList.toggle('hover')">
+	    	<div class="card-flip">
+	    		<div class="front">
+	    			<img src="images/death-note.jpg" />    			
+	    		</div>
+
+	    		<div class="back">
+	    			<div class="contents">
+		    			<p>
+		    				"Light Yagami is an ace student with great prospects - and he's so bored out of his mind. But all that changes when he finds the Death Note, a notebook by a rogue Shinigami death god. Any human whose name is written in the notebook dies."
+		    			</p>
+	    			</div>
+	    			<div class="back-bottom">
+		    			<div class="Ratings">	    			
+		    		    	<h5>
+		    		    		Ratings = 95.16%
+		    		    	</h5>
+		    			</div>
+		    			<div class="block-width">
+			    			<div class="col-xs-6">
+			    				<h5>Eposides</h5>
+			    				37      
+			    			</div>
+			    			<div class="col-xs-6">
+				    			<h5>Year</h5>
+				    			2006
+			    		    </div>
+			    		</div>
+			    	</div>
+	    	    </div>	    	    
+		    </div>
+		    <div class="card-details">
+	    	    	<h4 class="Anime-title">
+	    	    		<a href="death-note.html" title="Death Note">Death Note</a>
+	    	    	</h4>
+	    	    </div>
+	    </div>	
+	</div>
+	 
 <script> function myFunction() {
 	var x=
 	document.getElementById("myTopnav");
