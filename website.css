@@ -65,10 +65,19 @@ ul.topnav li.icon {
 }
 
 .right.carousel-control, .left.carousel-control {
-	display: none;
+	display:none;
 }
 #myCarousel {
-	background-color: black;
+	background-color: rgb(128,0,51);
+}
+
+.carousel-image {
+	height: 100px;
+	width: auto;
+	z-index: 9;
+}
+.carousel-indicators {
+	z-index: 10;
 }
 
 .card-container {
