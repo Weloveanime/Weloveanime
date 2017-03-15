@@ -2,6 +2,7 @@
 <html>
 <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
 	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 	
 	<link href="website.css" rel="stylesheet">
@@ -13,26 +14,29 @@
 	<link rel="mask-icon" href="snorlax_icon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
 
+	<title>Weloveanime</title>
 
-<title>Weloveanime</title>
-<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
-<link href="website.css" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-</script>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet"> -->
+	<!-- <link href="website.css" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
 </head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write('<script src="jquery-3.1.1.min.js"></script>
-  <script> /*
-  	if (jQuery) {
-    alert("jquery is loaded");
-    } 
-    else {
-    alert("Not loaded");
-    } */
-  </script>
+      <!--maybe delete this thing below -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script>!window.jQuery && document.write('<script src="jquery-3.1.1.min.js"></script>
+	  <script> /*
+	  	if (jQuery) {
+	    alert("jquery is loaded");
+	    } 
+	    else {
+	    alert("Not loaded");
+	    } */
+	  </script>
+
 <body>
 	<div id="header">
 	    <h1>Anime World</h1>
@@ -48,46 +52,47 @@
 			</li>
 		</ul>
 	</div>
-    
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active">
-			</li>
-			<li data-target="#myCarousel" data-slide-to="1">
-			</li>
-			<li data-target="#myCarousel" data-slid-to="2">
-			</li>
-			<li data-target="#myCarousel" data-slide-to="3">
-			</li>
-			<li data-target="#myCarousel" data-slide-to="4">
-			</li>
-		</ol>
+    <div class="carousel-container">   
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    	<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active">
+				</li>
+				<li data-target="#myCarousel" data-slide-to="1">
+				</li>
+				<li data-target="#myCarousel" data-slide-to="2">
+				</li>
+				<li data-target="#myCarousel" data-slide-to="3">
+				</li>
+				<li data-target="#myCarousel" data-slide-to="4">
+				</li>
+			</ol>
 
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="website-anime/CodeGeass.png" width="800" height="400" alt="Code Geass">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img class="carousel-image" src="website-anime/CodeGeass.png" alt="Code Geass">
+				</div>
+				<div class="item">
+					<img class="carousel-image" src="website-anime/FairyTail.png" alt="Fairy Tail">
+				</div>
+				<div class="item">
+					<img class="carousel-image" src="website-anime/OnePiece.png" alt="One Piece">
+				</div>
+				<div class="item">
+					<img class="carousel-image" src="website-anime/Naruto.png" alt="Naruto">
+				</div>
+				<div class="item">
+					<img class="carousel-image" src="website-anime/Goku.png" alt="Dragon Ball">
+				</div>
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-			<div class="item">
-				<img src="website-anime/FairyTail.png" width="800" height="400" alt="Fairy Tail">
-			</div>
-			<div class="item">
-				<img src="website-anime/OnePiece.png" width="700" height="450" alt="One Piece">
-			</div>
-			<div class="item">
-				<img src="website-anime/Naruto.png" width="500" height="400" alt="Naruto">
-			</div>
-			<div class="item">
-				<img src="website-anime/Goku.png" width="450" height="300" alt="Dragon Ball">
-			</div>
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
+	    </div>
 	</div>
 
     <div class="popular-shows">

@@ -67,18 +67,24 @@ ul.topnav li.icon {
 .right.carousel-control, .left.carousel-control {
 	display:none;
 }
-#myCarousel {
+
+.carousel-container {
 	background-color: rgb(128,0,51);
+	width: 100%;
+	height: 720px;
 }
 
-.carousel-image {
-	height: 100px;
-	width: auto;
+.carousel-inner, .item active img {
+	width: 100%;
+	height: 720px;
 	z-index: 9;
 }
+
 .carousel-indicators {
 	z-index: 10;
 }
+
+
 
 .card-container {
 	perspective: 1000px;
