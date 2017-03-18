@@ -7,6 +7,11 @@
 
 	<link href="website.css" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
 	<link rel="apple-touch-icon" sizes="180x180" href="snorlax_icon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="snorlax_icon/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="snorlax_icon/favicon-16x16.png" sizes="16x16">
@@ -19,11 +24,7 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet"> -->
 	<!-- <link href="website.css" rel="stylesheet"> -->
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-	</script>
+  
 </head>
       <!--maybe delete this thing below -->
 	  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -39,27 +40,122 @@
  -->
 <body>
 	<div id="header">
-	    <h1>Anime World</h1>
-  <div class="box">
-    <div class="container-1">
-      <span calss="icon"><i class="fa fa-search"> </i></span>
-      <input type="search" id="search" placeholder="Search..." />
-    </div>
-  </div>
-	  	<ul class= "topnav" id="myTopnav">
+		<div id="top-layer">
+		    <div id="anime-logo">
+		    	<a href="index.html" title="Anime World">Anime World</a>
+		    </div>
+        
+	        <a href=".overlay" id="loginlink" data-rel="popup" data-position-to="window"data-transition="pop">Sign in</a> 
+		    <div class="overlay" style="display: none; position: absolute; z-index: 100;">
+		        <div id="wrapper">
+		        	<div id="login_div" data-role="popup">
+		        		<a class="close">x</a>
+		        		<form method="post">
+		        			
+		        			<div class="input-field">
+		        				<i class="mdi-social-person-outline prefix"></i>
+		        				<input id="email" type="email" class="validate">
+		        				<label class="active" for="email" data-error="wrong" data-success="right" class="center-align">Enter Your Email</label>
+		        			</div>
+
+		        			<div class="input-field">
+		        				<i class="mdi-action-lock-outline prefix"></i>
+		        				<input id="password" type="password">
+		        				<label class="active" for="password">Password</label>
+		        			</div>
+
+		        			<div class="input-field">
+		        				<input type="checkbox" id="remember-me" />
+		        				<label for="remember-me">Remember Me</label>
+		        			</div>
+
+		        			<div class="input-field">
+		        				<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+		        			</div>
+
+		        			<p>
+		        			    <!-- add link? -->
+		        	        	<a href="#" id="forgot">Forgotten password?</a>
+		        			</p>	
+		         		</form>
+		        	</div>        		
+		        </div>
+		    </div>
+
+		    <a href=".overlap" id="registerlink" data-rel="popup" data-position-to="window" data-transition="pop">Register</a> 
+		    <div class="overlap" style="display: none; position: absolute; z-index: 100;">
+		    	<div class="wrapper2">
+			        <div id="register_div" data-role="popup">
+			        	<a class="close">x</a>
+			        	<form method="post">
+			        			
+			        	    <div class="input-field">
+			        			<i class="mdi-action-face-unlock prefix"></i>
+			        			<input id="firstname" type="text" class="validate">
+			        			<label class="active" for="firstname" class="center-align">First Name</label>
+			        		</div>
+
+			        		<div class="input-field">
+			        		    <i class="mdi-image-tag-faces prefix"></i>	        			
+			        			<input id="lastname" type="text">
+			        			<label class="active" for="lastname">Last Name</label>
+			        		</div>
+
+			        		<div class="input-field">
+			        			<i class="mdi-social-person-outline prefix"></i>
+			        			<input id="username" type="text" />
+			        			<label class="active" for="username">Username</label>
+			        		</div>
+
+			        		<div class="input-field">
+			        				<i class="mdi-action-lock-outline prefix"></i>
+			        				<input id="password" type="password">
+			        				<label class="active" for="password">Password</label>
+			        		</div>
+
+			        		<div class="input-field">
+			        			<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+			        		</div>
+			
+			         	</form>
+			        </div>        		
+		        </div>
+		    </div>
+
+			<div class="box">
+			    <div class="container-1">
+			    	<span class="icon"><i class="fa fa-search"> </i></span>
+			    	<input type="search" id="search" list="Anime-names" placeholder="Search..." />
+
+			    <datalist id="Anime-names">
+				    <option value="Fairy Tail"></option>
+				    <option value="Code Geass"></option>
+				    <option value="Death Note"></option>
+				    <option value="Dragon Ball Super"></option>
+				    <option value="Naruto"></option>
+				    <option value="Sword Art Online"></option>
+				    <option value="Attack on Titan"></option>
+				    <option value="Full Metal Alchemist"></option>
+			      </datalist>
+
+			    </div>
+            </div>
+	    </div>
+
+		<ul class= "topnav" id="myTopnav">
 			<li><a href="#home">Home</a></li>
 			<li><a href="#about_anime">About Anime</a></li>
 			<li><a href="#genre">Genre</a></li>
 			<li><a href="newest">Newest</a></li>
 			<li><a href="most_popular">Most Popular</a></li>
 			<li><a href="contact">Contact</a></li>
-				<a href="javascript:void(0);"
-				onclick="myFunction()">&#9776;</a>
-			</li>
-		</ul>
+			<a href="javascript:void(0);"
+					onclick="myFunction()">&#9776;</a>			
+	    </ul>  	
 	</div>
+
     <div class="carousel-container">
-	    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
 	    	<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active">
 				</li>
@@ -99,6 +195,10 @@
 				</a>
 			</div>
 	    </div>
+	</div>
+
+	<div class="subscribe">
+		
 	</div>
 
     <div class="popular-shows">
@@ -141,6 +241,47 @@
 	    	    </div>
 	    </div>
 	</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<script>
+		$(document).ready(function() {
+			$("#loginlink").click(function( event ) {
+				event.preventDefault();
+				$(".overlay").fadeToggle("fast");
+		    });
+			$(".close").click(function() {
+				$(".overlay").fadeOut("fast");
+			});
+			$(document).keyup(function(e) {
+				if(e.keyCode == 27 && $(".overlay").css("display") != "none" ) {
+					event.preventDefault();
+					$(".overlay").fadeOut("fast");
+				}
+			});
+		});		
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			$("#registerlink").click(function( event ) {
+				event.preventDefault();
+				$(".overlap").fadeToggle("fast");
+		    });
+			$(".close").click(function() {
+				$(".overlap").fadeOut("fast");
+			});
+			$(document).keyup(function(e) {
+				if(e.keyCode == 27 && $(".overlap").css("display") != "none" ) {
+					event.preventDefault();
+					$(".overlap").fadeOut("fast");
+				}
+			});
+		});		
+	</script>
 
 	<script> function myFunction() {
 		var x=
