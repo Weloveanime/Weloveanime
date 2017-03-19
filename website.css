@@ -1,7 +1,9 @@
-h1 {
+#anime-logo a {
 	font-family: 'Sansita';
 	font-size: 50px;
   	color: rgba(255, 0, 102, 0.6);
+  	text-decoration: none;
+  	float: left;
 }
 
 #header {
@@ -228,15 +230,12 @@ a:hover {
 
 input::-webkit-calendar-picker-indicator {
   display: none;
-}
+} 
 
    /* old nav bar */
 
 /*ul.topnav {
 
-=======
-ul.topnav {
->>>>>>> parent of 4aae122... added sign in and register forms
 	list-style-type: none;
 	margin:0;
 	padding:0;
@@ -337,7 +336,6 @@ ul.topnav li.icon {
 }
 
 
-
 .subscribe {
 	background-color: #f7eef1;
 	width: 100%;
@@ -366,6 +364,7 @@ ul.topnav li.icon {
 	margin-bottom: 0px;
 	margin-top: -30px;
 }
+
 
 .card-container {
 	perspective: 1000px;
