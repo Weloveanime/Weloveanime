@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
-
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="website.css" rel="stylesheet">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="snorlax_icon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="snorlax_icon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="snorlax_icon/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="snorlax_icon/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="snorlax_icon/manifest.json">
 	<link rel="mask-icon" href="snorlax_icon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
 
-	<title>Weloveanime</title>
+  <title>Weloveanime</title>
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet"> -->
 	<!-- <link href="website.css" rel="stylesheet"> -->
@@ -38,26 +37,28 @@
 	  </script>
  -->
 <body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
 	<div id="header">
 	    <h1>Anime World</h1>
-  <div class="box">
-    <div class="container-1">
-      <span calss="icon"><i class="fa fa-search"> </i></span>
-      <input type="search" id="search" placeholder="Search..." />
-    </div>
-  </div>
-	  	<ul class= "topnav" id="myTopnav">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about_anime">About Anime</a></li>
-			<li><a href="#genre">Genre</a></li>
-			<li><a href="newest">Newest</a></li>
-			<li><a href="most_popular">Most Popular</a></li>
-			<li><a href="contact">Contact</a></li>
-				<a href="javascript:void(0);"
-				onclick="myFunction()">&#9776;</a>
-			</li>
-		</ul>
-	</div>
+      <div class="box">
+              <div class="container-1">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="text" id="search" placeholder="     Search..." />
+              </div>
+      </div>
+      <div class="container">
+        <ul>
+          <li class="one"><a href="index.html">Home</a></li><!--
+       --><li class="two"><a href="AboutAnime.html">About Anime</a></li><!--
+       --><li class="three"><a href="Genre.html">Genre</a></li><!--
+       --><li class="four"><a href="#">Contact Us</a></li>
+          <hr />
+        </ul>
+      </div>
+
+
     <div class="carousel-container">
 	    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
 	    	<ol class="carousel-indicators">
@@ -74,21 +75,37 @@
 			</ol>
 
 			<div class="carousel-inner" role="listbox">
+        <h4>Now Streaming:</h4>
 				<div class="item active">
 					<img class="carousel-image" src="website-anime/CodeGeass.png" alt="Code Geass">
-				</div>
+          <span class="carousel-caption">
+              <h2>Code Geass</h2>
+				  </span>
+        </div>
 				<div class="item">
 					<img class="carousel-image" src="website-anime/FairyTail.png" alt="Fairy Tail">
-				</div>
+          <span class="carousel-caption">
+            <h2>Fairy Tail</h2>
+          </span>
+        </div>
 				<div class="item">
 					<img class="carousel-image" src="website-anime/OnePiece.png" alt="One Piece">
-				</div>
+          <span class="carousel-caption">
+            <h2>One Piece</h2>
+          </span>
+        </div>
 				<div class="item">
 					<img class="carousel-image" src="website-anime/Naruto.png" alt="Naruto">
-				</div>
+          <span class="carousel-caption">
+            <h2>Naruto Shippuden</h2>
+				  </span>
+        </div>
 				<div class="item">
 					<img class="carousel-image" src="website-anime/Goku.png" alt="Dragon Ball">
-				</div>
+          <span class="carousel-caption">
+            <h2>Dragon Ball Super</h2>
+				  </span>
+        </div>
 				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 					<span class="sr-only">Previous</span>
@@ -109,7 +126,7 @@
 	    			<img src="images/death-note.jpg" />
 	    		</div>
 
-	    		<div class="back">
+	    		  <div class="back">
 	    			<div class="contents">
 		    			<p>
 		    				"Light Yagami is an ace student with great prospects - and he's so bored out of his mind. But all that changes when he finds the Death Note, a notebook by a rogue Shinigami death god. Any human whose name is written in the notebook dies."
@@ -142,6 +159,14 @@
 	    </div>
 	</div>
 
+  <script>
+$('.search .icon-magnifier').on('hover', function (e) {
+  $('.search').toggleClass("search-open");
+  $('.icon').toggleClass("icon-open");
+  e.preventDefault();
+});
+</script>
+
 	<script> function myFunction() {
 		var x=
 		document.getElementById("myTopnav");
@@ -152,6 +177,7 @@
 		}
 	}
 	</script>
+
 
 </body>
 </html>
