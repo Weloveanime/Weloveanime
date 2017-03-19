@@ -55,7 +55,7 @@
 		        			<div class="input-field">
 		        				<i class="mdi-social-person-outline prefix"></i>
 		        				<input id="email" type="email" class="validate">
-		        				<label class="active" for="email" data-error="wrong" data-success="right" class="center-align">Enter Your Email</label>
+		        				<label class="active" for="email" data-error="wrong" data-success="right" class="center-align">Username</label>
 		        			</div>
 
 		        			<div class="input-field">
@@ -103,8 +103,8 @@
 
 			        		<div class="input-field">
 			        			<i class="mdi-social-person-outline prefix"></i>
-			        			<input id="username" type="text" />
-			        			<label class="active" for="username">Username</label>
+			        			<input id="email" type="email" class="validate" />
+			        			<label class="active" for="email" data-error="wrong" data-success="right" class="center-align">Email Address</label>
 			        		</div>
 
 			        		<div class="input-field">
@@ -198,7 +198,19 @@
 	</div>
 
 	<div class="subscribe">
-		
+		<div class="subscribe-box">
+			<h4>Subscribe to Our Newsletter!</h4>
+			<p>Receive the latest news about Anime!</p>
+			<div class="form-inline">
+				<div class="form-group">
+					<div class="input-field">
+						<input type="email" class="validate" id="subscribe-email" placeholder="Enter your Email">
+						<label class="active center-align" for="subscribe-email" data-error="wrong" data-success="right"></label>
+					</div>
+				</div>
+				<button type="submit" class="btn waves-effect waves-light">Subscribe</button>			
+			</div>
+		</div>
 	</div>
 
     <div class="popular-shows">
@@ -235,9 +247,13 @@
 	    	    </div>
 		    </div>
 		    <div class="card-details">
-	    	    	<h4 class="Anime-title">
+	    	    	<p class="Anime-title">
 	    	    		<a href="death-note.html" title="Death Note">Death Note</a>
-	    	    	</h4>
+	    	    	</p>
+	    	    	<a href="#" class="watch-now">Watch Now</a>
+	    	    	<p class="languages">
+	    	    		Sub & Dub
+	    	    	</p>
 	    	    </div>
 	    </div>
 	</div>
@@ -251,7 +267,7 @@
 		$(document).ready(function() {
 			$("#loginlink").click(function( event ) {
 				event.preventDefault();
-				$(".overlay").fadeToggle("fast");
+				$(".overlay").fadeToggle("fast")
 		    });
 			$(".close").click(function() {
 				$(".overlay").fadeOut("fast");
@@ -267,9 +283,9 @@
 
 	<script>
 		$(document).ready(function() {
-			$("#registerlink").click(function( event ) {
+			$("#registerlink").click(function(event) {				
 				event.preventDefault();
-				$(".overlap").fadeToggle("fast");
+				$(".overlap").fadeToggle("fast");				
 		    });
 			$(".close").click(function() {
 				$(".overlap").fadeOut("fast");

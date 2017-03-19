@@ -16,7 +16,6 @@
 
 #top-layer {
 	overflow: auto;
-
 }
 
 #registerlink, #loginlink {
@@ -192,9 +191,27 @@ ul.topnav li.icon {
 	height: 400px;
 }
 
+.subscribe-box {
+	z-index: 10;
+	position: absolute;
+	background-color: white;
+	width: 600px;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 10px 10px 10px #e6e6e6;
+	margin: 90px 25px 50px 290px;
+
+}
+
+.subscribe #subscribe-email {
+	width: 300px
+}
+
+
 .popular-shows {
 	background-color: rgb(128,0,51);
 	margin-bottom: 0px;
+	margin-top: -30px;
 }
 
 .card-container {
@@ -240,6 +257,8 @@ ul.topnav li.icon {
 .front img {
 	width: 100%;
 	height: auto;
+	opacity: 0.9;
+	border-radius: 5px 5px 0 0;
 }
 
 /*back, initially hidden */
