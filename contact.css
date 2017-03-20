@@ -1,0 +1,76 @@
+#anime-logo a {
+
+	font-family: 'VT323', monospace;
+	font-size: 50px;
+  color: rgba(255, 0, 102, 0.6);
+  text-decoration: none;
+  float: left;
+}
+
+#header {
+
+	background-color: black;
+	width: 100%;
+  /*adding height since no nav bar*/
+  height: 100px;
+  padding: 10px 0px 0px 20px;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+
+#titlehead h2 {
+
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+  color: rgba(128,0,51, 0.7);
+
+}
+
+.contact-form {
+
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.contact-form form {
+
+  max-width: 400px;
+  height: 470px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 100px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(128,0,51, 0.7);
+}
+
+.boxcontainer {
+
+  overflow: auto;
+}
+
+.mapaddress {
+
+  width: 400px;
+  height: 500px;
+  float: right;
+  margin-top: -500px;
+  margin-right: 100px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 16px;
+}
+
+.mapaddress p {
+
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.mapaddress img {
+  width: 400px;
+  height: 300px;
+}
+
+
