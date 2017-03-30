@@ -1,0 +1,289 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html>\
+<head>\
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />\
+\
+	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">\
+\
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">\
+\
+	<link href="website.css" rel="stylesheet">\
+\
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"\
+      rel="stylesheet">\
+\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">\
+\
+	<link rel="apple-touch-icon" sizes="180x180" href="snorlax_icon/apple-touch-icon.png">\
+	<link rel="icon" type="image/png" href="snorlax_icon/favicon-32x32.png" sizes="32x32">\
+	<link rel="icon" type="image/png" href="snorlax_icon/favicon-16x16.png" sizes="16x16">\
+	<link rel="manifest" href="snorlax_icon/manifest.json">\
+	<link rel="mask-icon" href="snorlax_icon/safari-pinned-tab.svg" color="#5bbad5">\
+	<meta name="theme-color" content="#ffffff">\
+\
+	<title>Weloveanime</title>\
+  \
+</head>\
+<body>\
+	<div id="header">\
+		<div id="top-layer">\
+		    <div id="anime-logo">\
+		    	<a href="index.html" title="Anime World">Anime World</a>\
+		    </div>\
+        \
+	        <a href=".overlay" id="loginlink" data-rel="popup" data-position-to="window"data-transition="pop">Sign in</a> \
+		    <div class="overlay" style="display: none; position: absolute; z-index: 100;">\
+		        <div class="wrapper">\
+		        	<div id="login_div" data-role="popup">\
+		        		<a class="close">x</a>\
+		        		<form method="post">\
+		        			\
+		        			<div class="input-field">\
+		        				<i class="mdi-social-person-outline prefix"></i>\
+		        				<input id="email" type="email" class="validate">\
+		        				<label class="active" for="email" data-error="wrong" data-success="right">Username</label>\
+		        			</div>\
+\
+		        			<div class="input-field">\
+		        				<i class="mdi-action-lock-outline prefix"></i>\
+		        				<input id="password" type="password">\
+		        				<label class="active center-align" for="password">Password</label>\
+		        			</div>\
+\
+		        			<div class="input-field">\
+		        				<input type="checkbox" id="remember-me" />\
+		        				<label for="remember-me">Remember Me</label>\
+		        			</div>\
+\
+		        			<div class="input-field">\
+		        				<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>\
+		        			</div>\
+\
+		        			<p>\
+		        			    <!-- add link? -->\
+		        	        	<a href="#" id="forgot">Forgotten password?</a>\
+		        			</p>	\
+		         		</form>\
+		        	</div>        		\
+		        </div>\
+		    </div>\
+\
+		    <a href=".overlap" id="registerlink" data-rel="popup" data-position-to="window" data-transition="pop">Register</a> \
+		    <div class="overlap" style="display: none; position: absolute; z-index: 100;">\
+		    	<div class="wrapper">\
+			        <div id="register_div" data-role="popup">\
+			        	<a class="close">x</a>\
+			        	<form method="post">\
+			        			\
+			        	    <div class="input-field">\
+			        			<i class="mdi-action-face-unlock prefix"></i>\
+			        			<input id="firstname" type="text" class="validate">\
+			        			<label class="active center-align" for="firstname">First Name</label>\
+			        		</div>\
+\
+			        		<div class="input-field">\
+			        		    <i class="mdi-image-tag-faces prefix"></i>	        			\
+			        			<input id="lastname" type="text">\
+			        			<label class="active" for="lastname">Last Name</label>\
+			        		</div>\
+\
+			        		<div class="input-field">\
+			        			<i class="mdi-social-person-outline prefix"></i>\
+			        			<input id="email" type="email" class="validate" />\
+			        			<label class="active center-align" for="email" data-error="wrong" data-success="right">Email Address</label>\
+			        		</div>\
+\
+			        		<div class="input-field">\
+			        				<i class="mdi-action-lock-outline prefix"></i>\
+			        				<input id="password" type="password">\
+			        				<label class="active" for="password">Password</label>\
+			        		</div>\
+\
+			        		<div class="input-field">\
+			        			<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>\
+			        		</div>\
+			\
+			         	</form>\
+			        </div>        		\
+		        </div>\
+		    </div>\
+                      \
+                         \
+			        <datalist id="Anime-names">\
+					    <option value="Fairy Tail"></option>\
+					    <option value="Code Geass"></option>\
+					    <option value="Death Note"></option>\
+					    <option value="Dragon Ball Super"></option>\
+					    <option value="Naruto"></option>\
+					    <option value="Sword Art Online"></option>\
+					    <option value="Attack on Titan"></option>\
+					    <option value="Full Metal Alchemist"></option>\
+			        </datalist>\
+\
+			    </div>\
+            </div>\
+	    </div>\
+<div class="carousel-container">\
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">\
+	    	<ol class="carousel-indicators">\
+				<li data-target="#myCarousel" data-slide-to="0" class="active">\
+				</li>\
+				<li data-target="#myCarousel" data-slide-to="1">\
+				</li>\
+				<li data-target="#myCarousel" data-slide-to="2">\
+				</li>\
+				<li data-target="#myCarousel" data-slide-to="3">\
+				</li>\
+				<li data-target="#myCarousel" data-slide-to="4">\
+				</li>\
+			</ol>\
+\
+			<div class="carousel-inner" role="listbox">\
+				<div class="item active">\
+					<img class="carousel-image" src="website-anime/CodeGeass.png" alt="Code Geass">\
+				</div>\
+				<div class="item">\
+					<img class="carousel-image" src="website-anime/FairyTail.png" alt="Fairy Tail">\
+				</div>\
+				<div class="item">\
+					<img class="carousel-image" src="website-anime/OnePiece.png" alt="One Piece">\
+				</div>\
+				<div class="item">\
+					<img class="carousel-image" src="website-anime/Naruto.png" alt="Naruto">\
+				</div>\
+				<div class="item">\
+					<img class="carousel-image" src="website-anime/Goku.png" alt="Dragon Ball">\
+				</div>\
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">\
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>\
+					<span class="sr-only">Previous</span>\
+				</a>\
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">\
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>\
+					<span class="sr-only">Next</span>\
+				</a>\
+			</div>\
+	    </div>\
+	</div>\
+\
+	<div class="subscribe">\
+		<div class="subscribe-box">\
+			<h4>Subscribe to Our Newsletter!</h4>\
+			<p>Receive the latest news about Anime!</p>\
+			<div class="form-inline">\
+				<div class="form-group">\
+					<div class="input-field">\
+						<input type="email" class="validate" id="subscribe-email" placeholder="Enter your Email">\
+						<label class="active center-align" for="subscribe-email" data-error="wrong" data-success="right"></label>\
+					</div>\
+				</div>\
+				<button type="submit" class="btn waves-effect waves-light">Subscribe</button>			\
+			</div>\
+		</div>\
+	</div>\
+\
+    <div class="popular-shows">\
+    	<h2>Popular Shows</h2>\
+		<div class="card-container" ontouchstart="this.classList.toggle('hover')">\
+	    	<div class="card-flip">\
+	    		<div class="front">\
+	    			<img src="images/death-note.jpg" />\
+	    		</div>\
+\
+	    		<div class="back">\
+	    			<div class="contents">\
+		    			<p>\
+		    				"Light Yagami is an ace student with great prospects - and he's so bored out of his mind. But all that changes when he finds the Death Note, a notebook by a rogue Shinigami death god. Any human whose name is written in the notebook dies."\
+		    			</p>\
+	    			</div>\
+	    			<div class="back-bottom">\
+		    			<div class="Ratings">\
+		    		    	<h5>\
+		    		    		Ratings = 95.16%\
+		    		    	</h5>\
+		    			</div>\
+		    			<div class="block-width">\
+			    			<div class="col-xs-6">\
+			    				<h5>Eposides</h5>\
+			    				37\
+			    			</div>\
+			    			<div class="col-xs-6">\
+				    			<h5>Year</h5>\
+				    			2006\
+			    		    </div>\
+			    		</div>\
+			    	</div>\
+	    	    </div>\
+		    </div>\
+		    <div class="card-details">\
+	    	    	<p class="Anime-title">\
+	    	    		<a href="death-note.html" title="Death Note">Death Note</a>\
+	    	    	</p>\
+	    	    	<a href="#" class="watch-now">Watch Now</a>\
+	    	    	<p class="languages">\
+	    	    		Sub & Dub\
+	    	    	</p>\
+	    	    </div>\
+	    </div>\
+	</div>\
+    \
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>\
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">\
+	</script>\
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">\
+	</script>\
+	<script>\
+		$(document).ready(function() \{\
+			$("#loginlink").click(function( event ) \{\
+				event.preventDefault();\
+				$(".overlay").fadeToggle("fast")\
+		    \});\
+			$(".close").click(function() \{\
+				$(".overlay").fadeOut("fast");\
+			\});\
+			$(document).keyup(function(e) \{\
+				if(e.keyCode == 27 && $(".overlay").css("display") != "none" ) \{\
+					event.preventDefault();\
+					$(".overlay").fadeOut("fast");\
+				\}\
+			\});\
+		\});		\
+	</script>\
+\
+	<script>\
+		$(document).ready(function() \{\
+			$("#registerlink").click(function(event) \{				\
+				event.preventDefault();\
+				$(".overlap").fadeToggle("fast");				\
+		    \});\
+			$(".close").click(function() \{\
+				$(".overlap").fadeOut("fast");\
+			\});\
+			$(document).keyup(function(e) \{\
+				if(e.keyCode == 27 && $(".overlap").css("display") != "none" ) \{\
+					event.preventDefault();\
+					$(".overlap").fadeOut("fast");\
+				\}\
+			\});\
+		\});		\
+	</script>\
+\
+	<script> function myFunction() \{\
+		var x=\
+		document.getElementById("myTopnav");\
+		if (x.className === "topnav") \{\
+			x.className += "responsive";\
+		\} else \{\
+			x.className="topnav"\
+		\}\
+	\}\
+	</script>\
+\
+</body>\
+</html>}
